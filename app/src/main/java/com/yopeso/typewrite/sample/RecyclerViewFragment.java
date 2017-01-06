@@ -16,7 +16,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class RecyclerViewFragment extends Fragment {
-    private static final int REFRESH_DELAY = 4500;
+    private static final int REFRESH_DELAY = 45000;
     private static final int ITEMS_COUNT = 25;
 
     @BindView(R.id.pullToRefresh)

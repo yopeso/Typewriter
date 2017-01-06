@@ -13,14 +13,14 @@ import android.support.annotation.NonNull;
 
 abstract class BaseRefreshDrawable extends Drawable implements Drawable.Callback, Animatable {
 
-    private TypewriterRefreshLayout mRefreshLayout;
+    private TypewriterRefreshLayout refreshLayout;
 
-    BaseRefreshDrawable(TypewriterRefreshLayout mRefreshLayout) {
-        this.mRefreshLayout = mRefreshLayout;
+    BaseRefreshDrawable(TypewriterRefreshLayout refreshLayout) {
+        this.refreshLayout = refreshLayout;
     }
 
     Context getContext() {
-        return mRefreshLayout == null ? null : mRefreshLayout.getContext();
+        return refreshLayout == null ? null : refreshLayout.getContext();
     }
 
     public abstract void setPercent(float percent, boolean invalidate);
